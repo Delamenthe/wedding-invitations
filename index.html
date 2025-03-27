@@ -35,12 +35,12 @@
             event.preventDefault();
             const name = document.getElementById("name").value;
             const attendance = document.getElementById("attendance").value;
-            const url = "https://script.google.com/macros/s/AKfycbwWGZjVnjU2sghCazAlmbC6clff7xRScCKBwIWIeQ55kc4EdL7RHIRZgOzPryIvt7wYMg/exec";
-
+            const url = "https://script.google.com/macros/s/AKfycbyLpbLZOyU6iloRveNgdNCGpTBbTGjwOHYeoRfG4Lax6CINGnyVL_AgWfarbc-8J5qd/exec";
             fetch(url, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ name: name, attendance: attendance })
+                body: JSON.stringify({ name: name, attendance: attendance }),
+                mode: "no-cors"
             })
             .then(response => response.json())
             .then(data => {
