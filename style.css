@@ -1027,6 +1027,10 @@ h2 svg {
         animation: shrink2 2s ease-in-out forwards;
     }
 
-}
+
+    .timing-block .row {
+        transform: translateY(7vw);
+        transition: transform 0.5s ease-out;
+    }
 
 }
