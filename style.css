@@ -120,7 +120,6 @@ h2 {
 }
 
 .text-block {
-    width: 50%;
     flex-wrap: wrap;
     display: flex;
     max-width: 45vw;
@@ -594,4 +593,214 @@ h2 svg {
 .timing-block .row.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    h2 {
+        font-size: 5.5vw;
+    }
+
+    .photo-container {
+        width: 100vw;
+        height: 66vw;
+    }
+
+    .line {
+        width: 36vw;
+        height: 0.2vw;
+        margin: 3vw auto;
+    }
+
+    .date-block {
+        font-size: 3.5vw;
+    }
+
+    .text-block {
+        max-width: 80vw;
+
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    .main-text {
+        font-size: 4vw;
+    }
+
+    .beautiful-text {
+        font-size: 5.5vw;
+        margin-top: 2.5vw;
+    }
+
+    .visible-img {
+        display: none;
+    }
+
+    .calendar, .eucalyptus {
+        width: 43vw;
+    }
+
+    .date {
+        font-size: 3.5vw;
+    }
+
+    .calendar-block, .gift-block, .description-block, .location-block, .counter-block, .timing-block, .acceptance-block {
+        padding: 9vw 0;
+    }
+
+    .main-image-container {
+        width: 74vw;
+        padding: 3vw;
+    }
+
+    .left-bivak, .right-bivak {
+        position: static;
+        width: 38vw;
+        margin: 4vw 2vw;
+        overflow: hidden;
+    }
+
+    .big-label {
+        font-size: 5vw;
+        margin-top: 3vw;
+    }
+
+    .little-label {
+        width: 100%;
+        font-size: 3.2vw;
+        margin-bottom: 3vw;
+    }
+
+    .timing-container .row img {
+        width: 9vw;
+    }
+
+    .time {
+        font-size: 7vw;
+    }
+
+    .row {
+        padding: 0 4vw;
+        height: 19vw;
+    }
+
+    .icon-container {
+        margin-right: 5vw;
+    }
+
+    .col .bt, .row {
+        font-size: 4.5vw;
+    }
+
+    .col .st {
+        font-size: 2.5vw;
+    }
+
+    td {
+        font-size: 9vw;
+    }
+
+    th {
+        width: 20vw;
+        max-width: 20vw;
+        min-width: 20vw;
+        font-size: 3vw;
+    }
+
+    .main-text {
+        width: 62%;
+        margin-left: 10vw;
+    }
+
+    .date-container {
+        width: 11vw;
+        font-size: 9vw;
+        left: 8vw;
+    }
+
+    .date-container .vertical-line {
+        width: 0.2vw;
+        height: 12vw;
+    }
+
+    #rsvp-form {
+        width: 50vw;
+    }
+
+    #rsvp-form label {
+        font-size: 3vw;
+        margin-bottom: 1.7vw;
+    }
+
+    #rsvp-form input {
+        font-size: 3vw;
+        margin-bottom: 5vw;
+    }
+
+    #attendance {
+        margin-bottom: 5vw;
+    }
+
+    #attendance .item {
+        height: 5vw;
+    }
+
+    #attendance .item input {
+        width: 3vw;
+        margin: auto 2.5vw auto 2vw;
+        height: 3vw;
+    }
+
+    .send-button {
+        font-size: 3.2vw;
+        padding: 2vw 7.5vw;
+        margin: 4vw auto;
+    }
+
+    .video-block h1 {
+        font-size: 4vw;
+    }
+
+    .video-block .text {
+        top: 6vw;
+        left: 9vw;
+    }
+
+    .video-block .line {
+        margin: 2.5vw 0;
+        width: 54vw;
+    }
+
+    .video-block .beautiful-text {
+        font-size: 4vw;
+    }
+
+    h2 svg {
+        right: 23vw;
+        top: -7vw;
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .video-block h2 {
+        font-size: 5vw;
+        margin: 2vw 0 2vw 0;
+    }
+
+    .header-block {
+        height: fit-content;
+        text-align: center;
+        margin: 9vw auto;
+    }
+
+    #response-msg {
+        bottom: 2.2vw;
+        font-size: 3.5vw;
+    }
 }
