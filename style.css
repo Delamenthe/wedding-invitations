@@ -1024,6 +1024,7 @@ h2 svg {
     }
     .header-img {
         height: auto;
+        animation-delay: 2s;
         animation: shrink2 2s ease-in-out forwards;
     }
 
