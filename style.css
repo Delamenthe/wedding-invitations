@@ -822,10 +822,6 @@ h2 svg {
         margin: 5vw 0 8vw;
     }
 
-    .header-img {
-        scale: 1.5;
-    }
-
     .date-block {
         margin-top: 6.5vw;
         font-size: 5.5vw;
@@ -1017,6 +1013,20 @@ h2 svg {
         width: 7vw;
         height: 7vw;
     }
+
+    @keyframes shrink2 {
+        from {
+            width: 100%;
+        }
+        to {
+            width: 150%;
+        }
+    }
+    .header-img {
+        height: auto;
+        animation: shrink2 2s ease-in-out forwards;
+    }
+
 }
 
 }
