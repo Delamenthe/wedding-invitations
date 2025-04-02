@@ -1,0 +1,597 @@
+@font-face {
+    font-family: '1';
+    src: url('1.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Viaoda Libre';
+    src: url("ViaodaLibre-Regular.ttf") format('opentype');
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    color: #2f2f2f;
+    width: 100vw;
+    font-family: "Viaoda Libre", serif;
+}
+
+.container {
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+}
+
+.header-block {
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+img {
+    pointer-events: none;
+}
+
+.header-img {
+    width: 120%;
+    height: auto;
+    animation: shrink 2s ease-in-out forwards;
+}
+
+@keyframes shrink {
+    from {
+        width: 120%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+h1 {
+
+    font-weight: 500;
+    font-size: 2vw;
+    letter-spacing: 0.3rem;
+    margin: 1vw 0;
+    padding: 0;
+    width: 100%;
+    font-style: normal;
+}
+
+.photo-container {
+    width: 50vw;
+    height: 28vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+h2 {
+    position: relative;
+    width: 100%;
+    margin: 1vw 0 2vw 0;
+    font-size: 2.5vw;
+    font-family: "1", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.line {
+    width: 15vw;
+    height: 0.1vw;
+    background: #9a9a9a;
+    margin: 1vw auto;
+}
+
+.date-block {
+    width: 100%;
+    margin-top: 1.5vw;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.description-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    background: no-repeat url("background-3.jpg") center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: fit-content;
+    padding: 5vw 0;
+}
+
+.text-block {
+    width: 50%;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 45vw;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+h3 {
+    font-size: 1.5vw;
+    padding: 0;
+    margin-top: 1vw;
+    font-weight: 300;
+}
+
+.beautiful-text {
+    font-family: '1', cursive;
+    font-size: 3.5vw;
+    font-weight: 300;
+    color: #858585;
+    margin-top: .5vw;
+}
+
+.calendar-block, .gift-block {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    background: white;
+    padding: 5vw 0;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gift-block {
+    overflow: hidden;
+}
+
+#response-msg {
+    width: 100%;
+    position: absolute;
+    bottom: 2.2vw;
+    font-size: 1.5vw;
+}
+
+.main-text {
+    width: 100%;
+    margin-bottom: 2vw;
+    letter-spacing: 0.5em;
+    display: flex;
+    justify-content: center;
+    font-family: "Viaoda Libre", serif;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.calendar {
+    width: 20vw;
+}
+
+.eucalyptus {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35vw;
+}
+
+.location-block, .counter-block {
+    padding: 4vw 0;
+    position: relative;
+    flex-wrap: wrap;
+    background: url("background-3.jpg") center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-image-container {
+    width: 35vw;
+    background: white;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1vw;
+}
+
+.big-label {
+    width: 100%;
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+
+.little-label {
+    width: 100%;
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+}
+
+.main-image-container img {
+    width: 100%;
+}
+
+.left-bivak, .right-bivak {
+    width: 18vw;
+    top: 13vw;
+    position: absolute;
+    overflow: hidden;
+}
+
+.left-bivak {
+    left: 14vw;
+}
+
+.right-bivak {
+    right: 14vw;
+}
+
+.timing-block {
+    padding: 5vw 0;
+}
+
+.date {
+    width: 100%;
+    font-size: 1.5vw;
+}
+
+.line-container {
+    margin: 0.5vw 0;
+    width: 100%;
+}
+
+.left-block {
+    border-right: 0.1vw solid #2f2f2f;
+}
+
+.row {
+    display: flex;
+    padding: 0 4vw;
+    justify-content: left;
+    align-items: center;
+    height: 10vw;
+    text-align: left;
+}
+
+.time {
+    font-size: 3vw;
+}
+
+.timing-container {
+    width: 100%;
+    font-size: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    margin-right: 2vw;
+}
+
+.col {
+    display: block;
+    text-align: left;
+}
+
+.col .bt {
+    padding-bottom: 0.5vw;
+    margin-bottom: 0.5vw;
+    border-bottom: 0.07vw solid #2f2f2f;
+}
+
+.col .st {
+    font-size: 1.2vw;
+}
+
+button {
+    border: none;
+    padding: 0;
+    outline: none;
+    margin: 0;
+    width: fit-content;
+    cursor: pointer;
+    background: none;
+}
+
+
+#countdown-container {
+    font-size: 3vw;
+}
+
+th {
+    width: 10vw;
+    max-width: 10vw;
+    min-width: 10vw;
+    font-family: '1', cursive;
+    font-size: 1.1vw;
+    text-align: center;
+    font-weight: 300;
+}
+
+.timing-block {
+    position: relative;
+}
+
+.wine-img {
+    width: 20vw;
+    position: absolute;
+    right: 3vw;
+    bottom: 3vw;
+}
+
+.bouquet-img {
+    width: 23vw;
+    position: absolute;
+    top: 0;
+    right: 2vw;
+}
+
+.bouquet2-img {
+    width: 25vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.acceptance-block {
+    position: relative;
+    display: flex;
+    background: no-repeat url("background-3.jpg") center center fixed;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5vw 0;
+    background: rgba(0, 128, 0, 0.12);
+}
+
+#rsvp-form {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 40vw;
+}
+
+#rsvp-form label {
+    font-size: 1.2vw;
+    width: 100%;
+    margin-bottom: 0.7vw;
+    font-weight: 600;
+}
+
+#rsvp-form #attendance label {
+    font-weight: 500;
+}
+
+#rsvp-form input {
+    font-size: 1.2vw;
+    width: 100%;
+    border: none;
+    border-bottom: 0.05vw solid #858585;
+    background: transparent;
+    outline: none;
+    font-weight: 400;
+    font-family: "Viaoda Libre", serif;
+    margin-bottom: 2vw;
+}
+
+#attendance {
+    width: 100%;
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+    accent-color: #2f2f2f;
+}
+
+#attendance .item {
+    display: flex;
+    width: 100%;
+    height: 2vw;
+    align-items: center;
+    align-content: center;
+    vertical-align: center;
+    flex-wrap: nowrap;
+}
+
+#attendance .item input {
+    width: 1vw;
+    margin: auto 0.5vw auto 1vw;
+    height: 1vw;
+}
+
+#attendance .item label {
+    height: fit-content;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.send-button {
+    font-size: 1.2vw;
+    justify-self: center;
+    background: #2f2f2f;
+    color: white;
+    padding: 1vw 2.5vw;
+    margin: 2vw auto;
+}
+
+.date-container {
+    position: absolute;
+    display: flex;
+    width: 10vw;
+    font-size: 6vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    left: 10vw;
+    font-weight: 300;
+}
+
+.date-container .vertical-line {
+    width: 0.1vw;
+    height: 5vw;
+    background: #2f2f2f;
+}
+
+.date-container .num {
+    width: 100%;
+}
+
+video {
+    filter: grayscale(1);
+    width: 100vw;
+    pointer-events: none;
+}
+
+.video-block {
+    position: relative;
+}
+
+.video-block .text {
+    text-align: left;
+    top: 2vw;
+    left: 15vw;
+    color: white;
+    position: absolute;
+}
+
+.video-block h1 {
+    font-size: 2vw;
+}
+
+.video-block .beautiful-text {
+    font-size: 2vw;
+    color: #b9b9b9;
+}
+
+.video-block h2 {
+    font-size: 3vw;
+}
+
+.video-block .line {
+    margin: 1.5vw 0;
+    width: 20vw;
+}
+
+.p1, .p2 {
+    position: absolute;
+    width: 20vw;
+    border: 0.5vw solid white;
+    box-shadow: 0.25vw 0.25vw 0.25vw rgb(196, 196, 196);
+}
+
+.p1 {
+
+    top: 10vw;
+    right: 5vw;
+}
+
+.p2 {
+    top: 20vw;
+    right: 7vw;
+
+}
+
+h2 svg {
+    position: absolute;
+    right: 13vw;
+    top: -4vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    z-index: 1000;
+}
+
+.preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: #46690b;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden-img {
+    opacity: 0;
+    transform: translateY(4vw);
+    transition: transform 0.5s ease-out;
+}
+
+.visible-img {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Смещение левых и правых картинок */
+.left-bivak {
+    transform: translateX(-5vw);
+    transition: transform 0.8s ease-out;
+}
+
+.left-bivak-active {
+    transform: translateX(0);
+}
+
+.right-bivak {
+    transform: translateX(5vw);
+    transition: transform 0.8s ease-out;
+}
+
+.right-bivak-active {
+    transform: translateX(0);
+}
+
+.timing-block .row {
+    opacity: 0;
+    transform: translateY(3vw);
+    transition: transform 0.4s ease-out;
+}
+
+.timing-block .row.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
