@@ -796,11 +796,206 @@ h2 svg {
     .header-block {
         height: fit-content;
         text-align: center;
-        margin: 9vw auto;
+        padding: 9vw 0;
     }
 
     #response-msg {
         bottom: 2.2vw;
         font-size: 3.5vw;
     }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 7.5vw;
+    }
+
+    .line {
+        width: 61vw;
+        height: 0.5vw;
+        margin: 4vw auto;
+    }
+
+    h2 {
+        font-size: 8.5vw;
+        margin: 5vw 0 8vw;
+    }
+
+    .header-img {
+        scale: 1.5;
+    }
+
+    .date-block {
+        margin-top: 6.5vw;
+        font-size: 5.5vw;
+    }
+
+    .calendar-block, .gift-block, .description-block, .location-block, .counter-block, .timing-block, .acceptance-block, .header-block {
+        padding: 12vw 0;
+    }
+
+    h3 {
+        font-size: 5vw;
+    }
+
+    .text-block {
+        max-width: 90vw;
+    }
+
+    .main-text {
+        font-size: 7vw;
+        width: 90%;
+        margin: 0 auto 12vw;
+    }
+
+    .beautiful-text {
+        font-size: 10.5vw;
+        right: 6vw;
+        position: absolute;
+        top: 18.5vw;
+    }
+
+    .calendar {
+        width: 70vw;
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.94);
+        border-radius: 5vw;
+        padding: 3vw;
+        border: 0.5vw solid;
+    }
+
+    .eucalyptus {
+        width: 88vw;
+    }
+
+    .date {
+        font-size: 5.5vw;
+    }
+
+    .big-label {
+        font-size: 6vw;
+        margin-top: 5vw;
+    }
+
+    .little-label {
+        width: 100%;
+        font-size: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    .main-image-container {
+        width: 80vw;
+        padding: 5vw;
+    }
+
+    .left-bivak, .right-bivak {
+        width: 41vw;
+        margin: 7vw 3vw;
+    }
+
+    .bouquet-img {
+        display: none;
+    }
+
+    .timing-container {
+        flex-wrap: nowrap;
+        width: 90%;
+        margin: 17vw auto 4vw;
+    }
+
+    .row {
+        padding: 0 5vw;
+        line-height: 1;
+        height: 30vw;
+    }
+
+    .col .st {
+        font-size: 4vw;
+    }
+
+    .col .bt, .row {
+        font-size: 6vw;
+    }
+
+    .col .bt {
+        padding-bottom: 2vw;
+        margin-bottom: 2vw;
+        border-bottom: 0.1vw solid #2f2f2f
+    }
+
+    td {
+        font-size: 12vw;
+    }
+
+    th {
+        width: 22vw;
+        max-width: 22vw;
+        min-width: 22vw;
+        font-size: 3.5vw;
+    }
+
+    .timing-container .row img {
+        width: 11vw;
+    }
+
+    .beautiful-text {
+        font-size: 12.5vw;
+        right: 10vw;
+        position: absolute;
+        top: 26.5vw;
+    }
+
+    .date-container {
+        display: none;
+    }
+
+    #rsvp-form {
+        margin-top: 5vw;
+        width: 80vw;
+    }
+
+    #rsvp-form label {
+        font-size: 5vw;
+        margin-bottom: 2.7vw;
+    }
+
+    #rsvp-form input {
+        font-size: 5vw;
+        margin-bottom: 8vw;
+    }
+
+    #attendance {
+        margin-bottom: 10vw;
+        margin-top: 2vw;
+    }
+
+    #attendance .item {
+        height: 8vw;
+    }
+
+    .send-button {
+        font-size: 5vw;
+        padding: 3vw 15.5vw;
+        margin: 4vw auto 7vw;
+    }
+
+    #response-msg {
+        bottom: 4.2vw;
+        font-size: 5vw;
+    }
+
+    .video-block h1 {
+        font-size: 5vw;
+    }
+
+    .video-block .beautiful-text {
+        position: static;
+        font-size: 5vw;
+    }
+
+    .video-block h2 {
+        font-size: 7vw;
+        margin: 2vw 0 2vw 0;
+    }
+
 }
